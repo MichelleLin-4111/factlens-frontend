@@ -1,0 +1,101 @@
+/* Mobile-first (extension default: ~360px) */
+.app-container {
+  max-width: 100%;
+  width: 100%;
+  padding: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.app-title {
+  margin: 0 0 16px 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #007bff;
+}
+
+.app-input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.app-input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.app-button {
+  width: 100%;
+  padding: 10px 16px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  box-sizing: border-box;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.app-button:hover {
+  background-color: #0056b3;
+}
+
+.app-button:active {
+  transform: scale(0.98);
+}
+
+.app-loading {
+  margin: 0;
+  padding: 12px;
+  color: #666;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Tablet and larger (768px+) */
+@media (min-width: 768px) {
+  .app-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .app-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .app-input {
+    padding: 12px 14px;
+    font-size: 15px;
+  }
+
+  .app-button {
+    padding: 12px 20px;
+    font-size: 15px;
+  }
+}
+
+/* Desktop (1200px+) */
+@media (min-width: 1200px) {
+  .app-container {
+    max-width: 700px;
+    padding: 24px;
+  }
+
+  .app-title {
+    font-size: 28px;
+  }
+}

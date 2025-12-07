@@ -1,0 +1,39 @@
+/* Mobile-first */
+.reasoning-section {
+  background: #f9f9f9;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #eee;
+}
+
+.reasoning-section h3 {
+  margin: 0 0 10px 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+.reasoning-text {
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0;
+  color: #555;
+}
+
+/* Tablet and larger */
+@media (min-width: 768px) {
+  .reasoning-section {
+    padding: 16px;
+    margin-bottom: 20px;
+  }
+
+  .reasoning-section h3 {
+    font-size: 17px;
+    margin-bottom: 12px;
+  }
+
+  .reasoning-text {
+    font-size: 14px;
+  }
+}

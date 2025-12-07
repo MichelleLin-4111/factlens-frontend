@@ -1,0 +1,33 @@
+/* Mobile-first */
+.sources-section {
+  margin-top: 16px;
+}
+
+.sources-section h3 {
+  margin: 0 0 12px 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+.sources-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Tablet and larger */
+@media (min-width: 768px) {
+  .sources-section {
+    margin-top: 20px;
+  }
+
+  .sources-section h3 {
+    font-size: 17px;
+    margin-bottom: 16px;
+  }
+
+  .sources-list {
+    gap: 12px;
+  }
+}
