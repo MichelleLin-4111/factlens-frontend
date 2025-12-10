@@ -1,7 +1,7 @@
 /* Mobile-first (extension default: ~360px) */
 .app-container {
-  max-width: 100%;
-  width: 100%;
+  min-width: 100vw;
+  width: 100vw;
   padding: 12px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
   background-color: #fff;
@@ -10,6 +10,8 @@
 }
 
 .app-title {
+  margin-top:20px;
+  text-align: center;
   margin: 0 0 16px 0;
   font-size: 20px;
   font-weight: 600;
@@ -58,21 +60,23 @@
 
 .app-loading {
   margin: 0;
-  padding: 12px;
   color: #666;
   text-align: center;
   font-size: 14px;
+  min-width: 100%;
+  margin: 0 0;
 }
 
-/* Tablet and larger (768px+) */
+
 @media (min-width: 768px) {
   .app-container {
-    max-width: 600px;
+    min-width: 100vw;
     margin: 0 auto;
     padding: 20px;
   }
 
   .app-title {
+    margin-top: 20px;
     font-size: 24px;
     margin-bottom: 20px;
   }
@@ -85,17 +89,5 @@
   .app-button {
     padding: 12px 20px;
     font-size: 15px;
-  }
-}
-
-/* Desktop (1200px+) */
-@media (min-width: 1200px) {
-  .app-container {
-    max-width: 700px;
-    padding: 24px;
-  }
-
-  .app-title {
-    font-size: 28px;
   }
 }

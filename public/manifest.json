@@ -3,7 +3,7 @@
   "name": "FactLens",
   "version": "0.1.0",
   "description": "Quick fact-check analysis for tweets.",
-  "permissions": ["storage"],
+  "permissions": ["storage", "tabs"],
   "host_permissions": ["<all_urls>"],
   "action": {
     "default_popup": "popup.html",

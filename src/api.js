@@ -29,15 +29,7 @@ function sleep(ms) {
 }
 
 export async function fetchFact(tweetId) {
-  const useMocks = (import.meta.env.VITE_USE_MOCKS ?? "true") === "true";
-
-  if (useMocks) {
-    // simulate network latency
-    await sleep(350 + Math.random() * 400);
-    return defaultMock(tweetId);
-  }
-
-  const base = import.meta.env.VITE_API_BASE_URL || "http://localhost:8000";
+  const base = import.meta.env.VITE_API_BASEz_URL || "http://localhost:8000";
   const url = `${base.replace(/\/$/, "")}/facts/${tweetId}`;
 
   const resp = await fetch(url, { method: "GET" });
